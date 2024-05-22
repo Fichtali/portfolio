@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll-triggered Image Movement</title>
+  <style>
+    body {
+      height: 2000px; /* Just to create scrolling */
+      margin: 0;
+      padding: 0;
+    }
+    .section {
+      position: relative;
+      height: 100vh;
+    }
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/bg.png');
+      background-size: cover;
+      background-position: center;
+      will-change: transform;
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <div class="background-image"></div>
+  </div>
+
+  <!-- Include GSAP library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to('.background-image', {
+      y: -200, // Adjust this value to change how much the image moves
+      ease: 'none',
+      scrollTrigger: {
+        trigger: ".section",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true
+      }
+    });
+  </script>
+</body>
+</html>

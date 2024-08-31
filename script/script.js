@@ -32,26 +32,26 @@ function buttonanimate(e) {
 //     myStansGap.style.height = '0%'
 //     myCardDetails.style.height = '100%'
 // }
-function hideDetails(e) {
-    const myStansGap = e.querySelector('#stansGap');
-    const myCardDetails = e.querySelector('#cardDetails');
+// function hideDetails(e) {
+//     const myStansGap = e.querySelector('#stansGap');
+//     const myCardDetails = e.querySelector('#cardDetails');
 
-    myStansGap.style.height = '100%'
-    myCardDetails.style.height = '0%'
-}
+//     myStansGap.style.height = '100%'
+//     myCardDetails.style.height = '0%'
+// }
 
-buttonanimate(buttonHoverBg)
+// buttonanimate(buttonHoverBg)
 
-menuBtn.addEventListener('click', () => {
-    if (menuOpened) {
-        menuList.style.width = "0%"
-        menuOpened = false
-    }
-    else {
-        menuList.style.width = "5%"
-        menuOpened = true
-    }
-})
+// menuBtn.addEventListener('click', () => {
+//     if (menuOpened) {
+//         menuList.style.width = "0%"
+//         menuOpened = false
+//     }
+//     else {
+//         menuList.style.width = "5%"
+//         menuOpened = true
+//     }
+// })
 
 // Select the character element
 const character = document.querySelector('#zikoavatar');

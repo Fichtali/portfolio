@@ -25,20 +25,20 @@ function buttonanimate(e) {
     })
 }
 
-// function showDetails(e) {
-//     const myStansGap = e.querySelector('#stansGap');
-//     const myCardDetails = e.querySelector('#cardDetails');
+function showDetails(e) {
+    const myStansGap = e.querySelector('#stansGap');
+    const myCardDetails = e.querySelector('#cardDetails');
 
-//     myStansGap.style.height = '0%'
-//     myCardDetails.style.height = '100%'
-// }
-// function hideDetails(e) {
-//     const myStansGap = e.querySelector('#stansGap');
-//     const myCardDetails = e.querySelector('#cardDetails');
+    myStansGap.style.height = '0%'
+    myCardDetails.style.height = '100%'
+}
+function hideDetails(e) {
+    const myStansGap = e.querySelector('#stansGap');
+    const myCardDetails = e.querySelector('#cardDetails');
 
-//     myStansGap.style.height = '100%'
-//     myCardDetails.style.height = '0%'
-// }
+    myStansGap.style.height = '100%'
+    myCardDetails.style.height = '0%'
+}
 
 buttonanimate(buttonHoverBg)
 

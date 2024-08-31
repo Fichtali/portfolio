@@ -40,44 +40,44 @@ function buttonanimate(e) {
 //     myCardDetails.style.height = '0%'
 // }
 
-// buttonanimate(buttonHoverBg)
+buttonanimate(buttonHoverBg)
 
-// menuBtn.addEventListener('click', () => {
-//     if (menuOpened) {
-//         menuList.style.width = "0%"
-//         menuOpened = false
-//     }
-//     else {
-//         menuList.style.width = "5%"
-//         menuOpened = true
-//     }
-// })
+menuBtn.addEventListener('click', () => {
+    if (menuOpened) {
+        menuList.style.width = "0%"
+        menuOpened = false
+    }
+    else {
+        menuList.style.width = "5%"
+        menuOpened = true
+    }
+})
 
 // Select the character element
 const character = document.querySelector('#zikoavatar');
 const typotext = document.querySelector('#zaaxpara');
 
-// Track mouse movement with GSAP
-document.addEventListener('mousemove', (e) => {
-    // Get the mouse position
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
+// // Track mouse movement with GSAP
+// document.addEventListener('mousemove', (e) => {
+//     // Get the mouse position
+//     const mouseX = e.clientX;
+//     const mouseY = e.clientY;
 
-    // Use GSAP to animate the character's position
-    gsap.to(character, {
-        x: mouseX * -0.007, // Adjust this value as needed
-        y: mouseY * -0.007, // Adjust this value as needed
-        duration: 0.5, // Animation duration
-        ease: 'power2.out' // Easing function for smooth animation
-    });
-    gsap.to(typotext, {
-        x: mouseX * 0.003, // Adjust this value as needed
-        y: mouseY * 0.003, // Adjust this value as needed
-        duration: 0.5, // Animation duration
-        ease: 'power2.out' // Easing function for smooth animation
-    });
+//     // Use GSAP to animate the character's position
+//     gsap.to(character, {
+//         x: mouseX * -0.007, // Adjust this value as needed
+//         y: mouseY * -0.007, // Adjust this value as needed
+//         duration: 0.5, // Animation duration
+//         ease: 'power2.out' // Easing function for smooth animation
+//     });
+//     gsap.to(typotext, {
+//         x: mouseX * 0.003, // Adjust this value as needed
+//         y: mouseY * 0.003, // Adjust this value as needed
+//         duration: 0.5, // Animation duration
+//         ease: 'power2.out' // Easing function for smooth animation
+//     });
 
-});
+// });
 
 
 
